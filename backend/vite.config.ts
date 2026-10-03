@@ -1,11 +1,7 @@
-import react, { reactCompilerPreset } from '@vitejs/plugin-react'
-import babel from '@rolldown/plugin-babel'
+import { cloudflare } from '@cloudflare/vite-plugin'
 import { defineConfig } from 'vite'
+import ssrPlugin from 'vite-ssr-components/plugin'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    babel({ presets: [reactCompilerPreset()] })
-  ],
+  plugins: [cloudflare(), ssrPlugin()]
 })
