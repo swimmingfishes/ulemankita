@@ -1,3 +1,8 @@
+CREATE TABLE `authors` (
+	`id` text PRIMARY KEY NOT NULL,
+	`name` text DEFAULT 'random'
+);
+--> statement-breakpoint
 CREATE TABLE `posts` (
 	`id` text PRIMARY KEY NOT NULL,
 	`user_id` text NOT NULL,

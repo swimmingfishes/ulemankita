@@ -1,0 +1,11 @@
+# wrangler.toml
+name = "backend"
+main = "src/index.ts"
+compatibility_date = "2026-10-03"
+
+[[d1_databases]]
+binding = "ulemankita_db"
+database_name = "ulemankita-db"
+database_id = "ad75b0c8-43dc-4037-b016-fa2083414e56"
+migrations_dir = "src/db/migrations/"
+migrations_pattern= "src/db/migrations/*.sql"

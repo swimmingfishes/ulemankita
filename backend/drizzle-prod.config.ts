@@ -1,4 +1,3 @@
-// drizzle.config.ts
 import { defineConfig } from "drizzle-kit";
 import { env } from "./src/data/env.ts";
 

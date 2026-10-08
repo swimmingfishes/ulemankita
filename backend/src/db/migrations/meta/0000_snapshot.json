@@ -1,9 +1,34 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "22796688-2b1c-415b-bd57-481ca7e46ecd",
+  "id": "22a85597-6757-45bd-9757-096030d1c228",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
+    "authors": {
+      "name": "authors",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "'random'"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
     "posts": {
       "name": "posts",
       "columns": {

@@ -32,14 +32,8 @@ drizzle-orm Query ke database
 
 drizzle-kit	Membuat file migrasi dari skema
 
-```
-src/
-├── index.ts              # membuat app, memasang middleware, mendaftarkan router
-├── routes/               # auth.ts, admin.ts, couple.ts, public.ts
-├── services/             # token, guest, wedding, media, comment
-├── middleware/           # requireAdmin, requireCouple, errorHandler
-├── db/
-│   ├── schema.ts         # skema Drizzle
-│   └── index.ts          # pembuat klien dari binding
-└── lib/                  # crypto (hash, token acak), slug, audit
+```sh
+npx drizzle-kit generate --config=drizzle-local.config.ts   
+npx wrangler d1 migrations apply ulemankita_db --local --persist-to=./src/db/local-db
+npx drizzle-kit studio --config=drizzle-local.config.ts
 ```
