@@ -8,11 +8,14 @@
   },
   "dependencies": {
     "@hono/zod-validator": "^0.9.1",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.5",
     "drizzle-orm": "^0.45.3",
     "hono": "^4.13.12",
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@types/node": "^26.6.4",
     "drizzle-kit": "^0.31.11",
     "wrangler": "^4.110.0"
   }
